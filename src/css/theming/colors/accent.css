@@ -1,0 +1,97 @@
+:root {
+  /* 
+      This is your CSS variables. 
+      Example:
+          background: var(--accent-500);
+          color: var(--accent-500-contrast);
+          
+      To change opacity of your color, use ...-h, ...-s and ...-l variables.
+      Example:
+          background-color: hsla( var(--accent-300-h), var(--accent-300-s), var(--accent-300-l), 70%);
+    */
+  --accent: hsla(var(--accent-h), calc(var(--accent-s) * 1%), calc(var(--accent-l) * 1%), 100%);
+
+  --accent-50-h: var(--accent-h);
+  --accent-50-s: calc(((var(--accent-s) - var(--mtc-light-s)) * var(--mtc-s-50) + var(--mtc-light-s)) * 1%);
+  --accent-50-l: calc(((var(--accent-l) - var(--mtc-light-l)) * var(--mtc-l-50) + var(--mtc-light-l)) * 1%);
+  --accent-50: hsl(var(--accent-50-h), var(--accent-50-s), var(--accent-50-l));
+  --accent-50-contrast: hsl(0, 0%, calc(((((1 - var(--mtc-l-50)) * 100 + var(--mtc-l-50) * var(--accent-l)) * 1%) - var(--accent-contrast-threshold, 50%)) * (-100)));
+
+  --accent-100-h: var(--accent-h);
+  --accent-100-s: calc(((var(--accent-s) - var(--mtc-light-s)) * var(--mtc-s-100) + var(--mtc-light-s)) * 1%);
+  --accent-100-l: calc(((var(--accent-l) - var(--mtc-light-l)) * var(--mtc-l-100) + var(--mtc-light-l)) * 1%);
+  --accent-100: hsl(var(--accent-100-h), var(--accent-100-s), var(--accent-100-l));
+  --accent-100-contrast: hsl(0, 0%, calc(((((1 - var(--mtc-l-100)) * 100 + var(--mtc-l-100) * var(--accent-l)) * 1%) - var(--accent-contrast-threshold, 50%)) * (-100)));
+
+  --accent-200-h: var(--accent-h);
+  --accent-200-s: calc(((var(--accent-s) - var(--mtc-light-s)) * var(--mtc-s-200) + var(--mtc-light-s)) * 1%);
+  --accent-200-l: calc(((var(--accent-l) - var(--mtc-light-l)) * var(--mtc-l-200) + var(--mtc-light-l)) * 1%);
+  --accent-200: hsl(var(--accent-200-h), var(--accent-200-s), var(--accent-200-l));
+  --accent-200-contrast: hsl(0, 0%, calc(((((1 - var(--mtc-l-200)) * 100 + var(--mtc-l-200) * var(--accent-l)) * 1%) - var(--accent-contrast-threshold, 50%)) * (-100)));
+
+  --accent-300-h: var(--accent-h);
+  --accent-300-s: calc(((var(--accent-s) - var(--mtc-light-s)) * var(--mtc-s-300) + var(--mtc-light-s)) * 1%);
+  --accent-300-l: calc(((var(--accent-l) - var(--mtc-light-l)) * var(--mtc-l-300) + var(--mtc-light-l)) * 1%);
+  --accent-300: hsl(var(--accent-300-h), var(--accent-300-s), var(--accent-300-l));
+  --accent-300-contrast: hsl(0, 0%, calc(((((1 - var(--mtc-l-300)) * 100 + var(--mtc-l-300) * var(--accent-l)) * 1%) - var(--accent-contrast-threshold, 50%)) * (-100)));
+
+  --accent-400-h: var(--accent-h);
+  --accent-400-s: calc(((var(--accent-s) - var(--mtc-light-s)) * var(--mtc-s-400) + var(--mtc-light-s)) * 1%);
+  --accent-400-l: calc(((var(--accent-l) - var(--mtc-light-l)) * var(--mtc-l-400) + var(--mtc-light-l)) * 1%);
+  --accent-400: hsl(var(--accent-400-h), var(--accent-400-s), var(--accent-400-l));
+  --accent-400-contrast: hsl(0, 0%, calc(((((1 - var(--mtc-l-400)) * 100 + var(--mtc-l-400) * var(--accent-l)) * 1%) - var(--accent-contrast-threshold, 50%)) * (-100)));
+
+  --accent-500-h: var(--accent-h);
+  --accent-500-s: calc(var(--accent-s) * 1%);
+  --accent-500-l: calc(var(--accent-l) * 1%);
+  --accent-500: var(--accent);
+  --accent-500-contrast: hsl(0, 0%, calc(((var(--accent-l) * 1%) - var(--accent-contrast-threshold, 50%)) * (-100)));
+
+  --accent-600-h: var(--accent-h);
+  --accent-600-s: calc(((1 - var(--mtc-s-600)) * 100 + var(--mtc-s-600) * var(--accent-s)) * 1%);
+  --accent-600-l: calc(((1 - var(--mtc-l-600)) * var(--accent-l) * var(--accent-l) / 100 + var(--mtc-l-600) * var(--accent-l)) * 1%);
+  --accent-600: hsl(var(--accent-600-h), var(--accent-600-s), var(--accent-600-l));
+  --accent-600-contrast: hsl(0, 0%, calc(((((1 - var(--mtc-l-600)) * var(--accent-l) * var(--accent-l) / 100 + var(--mtc-l-600) * var(--accent-l)) * 1%) - var(--accent-contrast-threshold, 50%)) * (-100)));
+
+  --accent-700-h: var(--accent-h);
+  --accent-700-s: calc(((1 - var(--mtc-s-700)) * 100 + var(--mtc-s-700) * var(--accent-s)) * 1%);
+  --accent-700-l: calc(((1 - var(--mtc-l-700)) * var(--accent-l) * var(--accent-l) / 100 + var(--mtc-l-700) * var(--accent-l)) * 1%);
+  --accent-700: hsl(var(--accent-700-h), var(--accent-700-s), var(--accent-700-l));
+  --accent-700-contrast: hsl(0, 0%, calc(((((1 - var(--mtc-l-700)) * var(--accent-l) * var(--accent-l) / 100 + var(--mtc-l-700) * var(--accent-l)) * 1%) - var(--accent-contrast-threshold, 50%)) * (-100)));
+
+  --accent-800-h: var(--accent-h);
+  --accent-800-s: calc(((1 - var(--mtc-s-800)) * 100 + var(--mtc-s-800) * var(--accent-s)) * 1%);
+  --accent-800-l: calc(((1 - var(--mtc-l-800)) * var(--accent-l) * var(--accent-l) / 100 + var(--mtc-l-800) * var(--accent-l)) * 1%);
+  --accent-800: hsl(var(--accent-800-h), var(--accent-800-s), var(--accent-800-l));
+  --accent-800-contrast: hsl(0, 0%, calc(((((1 - var(--mtc-l-800)) * var(--accent-l) * var(--accent-l) / 100 + var(--mtc-l-800) * var(--accent-l)) * 1%) - var(--accent-contrast-threshold, 50%)) * (-100)));
+
+  --accent-900-h: var(--accent-h);
+  --accent-900-s: calc(((1 - var(--mtc-s-900)) * 100 + var(--mtc-s-900) * var(--accent-s)) * 1%);
+  --accent-900-l: calc(((1 - var(--mtc-l-900)) * var(--accent-l) * var(--accent-l) / 100 + var(--mtc-l-900) * var(--accent-l)) * 1%);
+  --accent-900: hsl(var(--accent-900-h), var(--accent-900-s), var(--accent-900-l));
+  --accent-900-contrast: hsl(0, 0%, calc(((((1 - var(--mtc-l-900)) * var(--accent-l) * var(--accent-l) / 100 + var(--mtc-l-900) * var(--accent-l)) * 1%) - var(--accent-contrast-threshold, 50%)) * (-100)));
+
+  --accent-A100-h: calc(var(--accent-h) * var(--mtc-h-A100));
+  --accent-A100-s: calc(var(--mtc-s-A100) * 100%);
+  --accent-A100-l: calc(var(--mtc-l-A100) * 100%);
+  --accent-A100: hsl(var(--accent-A100-h), var(--accent-A100-s), var(--accent-A100-l));
+  --accent-A100-contrast: hsl(0, 0%, calc((var(--mtc-l-A100) * 100% - var(--accent-contrast-threshold, 50%)) * (-100)));
+
+  --accent-A200-h: calc(var(--accent-h) * var(--mtc-h-A200));
+  --accent-A200-s: calc(var(--mtc-s-A200) * 100%);
+  --accent-A200-l: calc(var(--mtc-l-A200) * 100%);
+  --accent-A200: hsl(var(--accent-A200-h), var(--accent-A200-s), var(--accent-A200-l));
+  --accent-A200-contrast: hsl(0, 0%, calc((var(--mtc-l-A200) * 100% - var(--accent-contrast-threshold, 50%)) * (-100)));
+
+  --accent-A400-h: calc(var(--accent-h) * var(--mtc-h-A400));
+  --accent-A400-s: calc(var(--mtc-s-A400) * 100%);
+  --accent-A400-l: calc(var(--mtc-l-A400) * 100%);
+  --accent-A400: hsl(var(--accent-A400-h), var(--accent-A400-s), var(--accent-A400-l));
+  --accent-A400-contrast: hsl(0, 0%, calc((var(--mtc-l-A400) * 100% - var(--accent-contrast-threshold, 50%)) * (-100)));
+
+  --accent-A700-h: calc(var(--accent-h) * var(--mtc-h-A700));
+  --accent-A700-s: calc(var(--mtc-s-A700) * 100%);
+  --accent-A700-l: calc(var(--mtc-l-A700) * 100%);
+  --accent-A700: hsl(var(--accent-A700-h), var(--accent-A700-s), var(--accent-A700-l));
+  --accent-A700-contrast: hsl(0, 0%, calc((var(--mtc-l-A700) * 100% - var(--accent-contrast-threshold, 50%)) * (-100)));
+}

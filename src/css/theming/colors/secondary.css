@@ -1,0 +1,97 @@
+:root {
+  /* 
+      This is your CSS variables. 
+      Example:
+          background: var(--secondary-500);
+          color: var(--secondary-500-contrast);
+          
+      To change opacity of your color, use ...-h, ...-s and ...-l variables.
+      Example:
+          background-color: hsla( var(--secondary-300-h), var(--secondary-300-s), var(--secondary-300-l), 70%);
+    */
+  --secondary: hsla(var(--secondary-h), calc(var(--secondary-s) * 1%), calc(var(--secondary-l) * 1%), 100%);
+
+  --secondary-50-h: var(--secondary-h);
+  --secondary-50-s: calc(((var(--secondary-s) - var(--mtc-light-s)) * var(--mtc-s-50) + var(--mtc-light-s)) * 1%);
+  --secondary-50-l: calc(((var(--secondary-l) - var(--mtc-light-l)) * var(--mtc-l-50) + var(--mtc-light-l)) * 1%);
+  --secondary-50: hsl(var(--secondary-50-h), var(--secondary-50-s), var(--secondary-50-l));
+  --secondary-50-contrast: hsl(0, 0%, calc(((((1 - var(--mtc-l-50)) * 100 + var(--mtc-l-50) * var(--secondary-l)) * 1%) - var(--secondary-contrast-threshold, 50%)) * (-100)));
+
+  --secondary-100-h: var(--secondary-h);
+  --secondary-100-s: calc(((var(--secondary-s) - var(--mtc-light-s)) * var(--mtc-s-100) + var(--mtc-light-s)) * 1%);
+  --secondary-100-l: calc(((var(--secondary-l) - var(--mtc-light-l)) * var(--mtc-l-100) + var(--mtc-light-l)) * 1%);
+  --secondary-100: hsl(var(--secondary-100-h), var(--secondary-100-s), var(--secondary-100-l));
+  --secondary-100-contrast: hsl(0, 0%, calc(((((1 - var(--mtc-l-100)) * 100 + var(--mtc-l-100) * var(--secondary-l)) * 1%) - var(--secondary-contrast-threshold, 50%)) * (-100)));
+
+  --secondary-200-h: var(--secondary-h);
+  --secondary-200-s: calc(((var(--secondary-s) - var(--mtc-light-s)) * var(--mtc-s-200) + var(--mtc-light-s)) * 1%);
+  --secondary-200-l: calc(((var(--secondary-l) - var(--mtc-light-l)) * var(--mtc-l-200) + var(--mtc-light-l)) * 1%);
+  --secondary-200: hsl(var(--secondary-200-h), var(--secondary-200-s), var(--secondary-200-l));
+  --secondary-200-contrast: hsl(0, 0%, calc(((((1 - var(--mtc-l-200)) * 100 + var(--mtc-l-200) * var(--secondary-l)) * 1%) - var(--secondary-contrast-threshold, 50%)) * (-100)));
+
+  --secondary-300-h: var(--secondary-h);
+  --secondary-300-s: calc(((var(--secondary-s) - var(--mtc-light-s)) * var(--mtc-s-300) + var(--mtc-light-s)) * 1%);
+  --secondary-300-l: calc(((var(--secondary-l) - var(--mtc-light-l)) * var(--mtc-l-300) + var(--mtc-light-l)) * 1%);
+  --secondary-300: hsl(var(--secondary-300-h), var(--secondary-300-s), var(--secondary-300-l));
+  --secondary-300-contrast: hsl(0, 0%, calc(((((1 - var(--mtc-l-300)) * 100 + var(--mtc-l-300) * var(--secondary-l)) * 1%) - var(--secondary-contrast-threshold, 50%)) * (-100)));
+
+  --secondary-400-h: var(--secondary-h);
+  --secondary-400-s: calc(((var(--secondary-s) - var(--mtc-light-s)) * var(--mtc-s-400) + var(--mtc-light-s)) * 1%);
+  --secondary-400-l: calc(((var(--secondary-l) - var(--mtc-light-l)) * var(--mtc-l-400) + var(--mtc-light-l)) * 1%);
+  --secondary-400: hsl(var(--secondary-400-h), var(--secondary-400-s), var(--secondary-400-l));
+  --secondary-400-contrast: hsl(0, 0%, calc(((((1 - var(--mtc-l-400)) * 100 + var(--mtc-l-400) * var(--secondary-l)) * 1%) - var(--secondary-contrast-threshold, 50%)) * (-100)));
+
+  --secondary-500-h: var(--secondary-h);
+  --secondary-500-s: calc(var(--secondary-s) * 1%);
+  --secondary-500-l: calc(var(--secondary-l) * 1%);
+  --secondary-500: var(--secondary);
+  --secondary-500-contrast: hsl(0, 0%, calc(((var(--secondary-l) * 1%) - var(--secondary-contrast-threshold, 50%)) * (-100)));
+
+  --secondary-600-h: var(--secondary-h);
+  --secondary-600-s: calc(((1 - var(--mtc-s-600)) * 100 + var(--mtc-s-600) * var(--secondary-s)) * 1%);
+  --secondary-600-l: calc(((1 - var(--mtc-l-600)) * var(--secondary-l) * var(--secondary-l) / 100 + var(--mtc-l-600) * var(--secondary-l)) * 1%);
+  --secondary-600: hsl(var(--secondary-600-h), var(--secondary-600-s), var(--secondary-600-l));
+  --secondary-600-contrast: hsl(0, 0%, calc(((((1 - var(--mtc-l-600)) * var(--secondary-l) * var(--secondary-l) / 100 + var(--mtc-l-600) * var(--secondary-l)) * 1%) - var(--secondary-contrast-threshold, 50%)) * (-100)));
+
+  --secondary-700-h: var(--secondary-h);
+  --secondary-700-s: calc(((1 - var(--mtc-s-700)) * 100 + var(--mtc-s-700) * var(--secondary-s)) * 1%);
+  --secondary-700-l: calc(((1 - var(--mtc-l-700)) * var(--secondary-l) * var(--secondary-l) / 100 + var(--mtc-l-700) * var(--secondary-l)) * 1%);
+  --secondary-700: hsl(var(--secondary-700-h), var(--secondary-700-s), var(--secondary-700-l));
+  --secondary-700-contrast: hsl(0, 0%, calc(((((1 - var(--mtc-l-700)) * var(--secondary-l) * var(--secondary-l) / 100 + var(--mtc-l-700) * var(--secondary-l)) * 1%) - var(--secondary-contrast-threshold, 50%)) * (-100)));
+
+  --secondary-800-h: var(--secondary-h);
+  --secondary-800-s: calc(((1 - var(--mtc-s-800)) * 100 + var(--mtc-s-800) * var(--secondary-s)) * 1%);
+  --secondary-800-l: calc(((1 - var(--mtc-l-800)) * var(--secondary-l) * var(--secondary-l) / 100 + var(--mtc-l-800) * var(--secondary-l)) * 1%);
+  --secondary-800: hsl(var(--secondary-800-h), var(--secondary-800-s), var(--secondary-800-l));
+  --secondary-800-contrast: hsl(0, 0%, calc(((((1 - var(--mtc-l-800)) * var(--secondary-l) * var(--secondary-l) / 100 + var(--mtc-l-800) * var(--secondary-l)) * 1%) - var(--secondary-contrast-threshold, 50%)) * (-100)));
+
+  --secondary-900-h: var(--secondary-h);
+  --secondary-900-s: calc(((1 - var(--mtc-s-900)) * 100 + var(--mtc-s-900) * var(--secondary-s)) * 1%);
+  --secondary-900-l: calc(((1 - var(--mtc-l-900)) * var(--secondary-l) * var(--secondary-l) / 100 + var(--mtc-l-900) * var(--secondary-l)) * 1%);
+  --secondary-900: hsl(var(--secondary-900-h), var(--secondary-900-s), var(--secondary-900-l));
+  --secondary-900-contrast: hsl(0, 0%, calc(((((1 - var(--mtc-l-900)) * var(--secondary-l) * var(--secondary-l) / 100 + var(--mtc-l-900) * var(--secondary-l)) * 1%) - var(--secondary-contrast-threshold, 50%)) * (-100)));
+
+  --secondary-A100-h: calc(var(--secondary-h) * var(--mtc-h-A100));
+  --secondary-A100-s: calc(var(--mtc-s-A100) * 100%);
+  --secondary-A100-l: calc(var(--mtc-l-A100) * 100%);
+  --secondary-A100: hsl(var(--secondary-A100-h), var(--secondary-A100-s), var(--secondary-A100-l));
+  --secondary-A100-contrast: hsl(0, 0%, calc((var(--mtc-l-A100) * 100% - var(--secondary-contrast-threshold, 50%)) * (-100)));
+
+  --secondary-A200-h: calc(var(--secondary-h) * var(--mtc-h-A200));
+  --secondary-A200-s: calc(var(--mtc-s-A200) * 100%);
+  --secondary-A200-l: calc(var(--mtc-l-A200) * 100%);
+  --secondary-A200: hsl(var(--secondary-A200-h), var(--secondary-A200-s), var(--secondary-A200-l));
+  --secondary-A200-contrast: hsl(0, 0%, calc((var(--mtc-l-A200) * 100% - var(--secondary-contrast-threshold, 50%)) * (-100)));
+
+  --secondary-A400-h: calc(var(--secondary-h) * var(--mtc-h-A400));
+  --secondary-A400-s: calc(var(--mtc-s-A400) * 100%);
+  --secondary-A400-l: calc(var(--mtc-l-A400) * 100%);
+  --secondary-A400: hsl(var(--secondary-A400-h), var(--secondary-A400-s), var(--secondary-A400-l));
+  --secondary-A400-contrast: hsl(0, 0%, calc((var(--mtc-l-A400) * 100% - var(--secondary-contrast-threshold, 50%)) * (-100)));
+
+  --secondary-A700-h: calc(var(--secondary-h) * var(--mtc-h-A700));
+  --secondary-A700-s: calc(var(--mtc-s-A700) * 100%);
+  --secondary-A700-l: calc(var(--mtc-l-A700) * 100%);
+  --secondary-A700: hsl(var(--secondary-A700-h), var(--secondary-A700-s), var(--secondary-A700-l));
+  --secondary-A700-contrast: hsl(0, 0%, calc((var(--mtc-l-A700) * 100% - var(--secondary-contrast-threshold, 50%)) * (-100)));
+}

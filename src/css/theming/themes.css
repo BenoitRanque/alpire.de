@@ -1,0 +1,31 @@
+@import "color-weights.css";
+@import "colors/primary.css";
+@import "colors/secondary.css";
+@import "colors/accent.css";
+@import "colors/neutral.css";
+
+/* default theme */
+:root {
+  /* 
+      Change this parameters to update your theme 
+    */
+  --primary-h: 202;
+  --primary-s: 75;
+  --primary-l: 28;
+  --primary-contrast-threshold: 44%;
+
+  --secondary-h: 165;
+  --secondary-s: 83;
+  --secondary-l: 27;
+  --secondary-contrast-threshold: 49%;
+
+  --accent-h: 296;
+  --accent-s: 78;
+  --accent-l: 28;
+  --accent-contrast-threshold: 49%;
+
+  --neutral-h: 202;
+  --neutral-s: 90;
+  --neutral-l: 90;
+  --neutral-contrast-threshold: 36%;
+}

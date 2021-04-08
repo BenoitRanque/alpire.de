@@ -1,0 +1,45 @@
+/* main imported css file. import global rules here, as well as color variables */
+
+@import "normalize.css";
+@import "theming/themes.css";
+@import "typhography.css";
+/* set defaul box sizing to border box, which makes much more sense than the default */
+/* ref: https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* ensure html always uses full viewport as a minimum */
+html {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+body {
+  min-height: 100%;
+}
+/* allow hiding things offscreen */
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+  --header-height: 50px;
+}
+
+body {
+  color: var(--neutral-500-contrast);
+  background: var(--neutral-500);
+}
+
+footer {
+  background: var(--primary-800);
+  text-align: center;
+  color: var(--primary-800-contrast);
+  padding: 1rem;
+}
+
+footer p {
+  margin: 0;
+}
