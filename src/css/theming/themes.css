@@ -33,14 +33,14 @@
   --primary-l: 76;
   --primary-contrast-threshold: 44%;
 
-  --secondary-h: 224;
+  --secondary-h: 236;
   --secondary-s: 61;
-  --secondary-l: 16;
+  --secondary-l: 38;
   --secondary-contrast-threshold: 49%;
 
-  --accent-h: 236;
+  --accent-h: 224;
   --accent-s: 61;
-  --accent-l: 38;
+  --accent-l: 16;
   --accent-contrast-threshold: 49%;
 
   --neutral-h: 204;
