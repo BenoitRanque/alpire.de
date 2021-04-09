@@ -28,11 +28,6 @@
   --neutral-s: 90;
   --neutral-l: 90;
   --neutral-contrast-threshold: 36%; */
-  --accent-h: 236;
-  --accent-s: 61;
-  --accent-l: 38;
-  --accent-contrast-threshold: 49%;
-
   --primary-h: 212;
   --primary-s: 79;
   --primary-l: 76;
@@ -43,8 +38,13 @@
   --secondary-l: 16;
   --secondary-contrast-threshold: 49%;
 
-  --neutral-h: 0;
-  --neutral-s: 0;
-  --neutral-l: 100;
+  --accent-h: 236;
+  --accent-s: 61;
+  --accent-l: 38;
+  --accent-contrast-threshold: 49%;
+
+  --neutral-h: 204;
+  --neutral-s: 28;
+  --neutral-l: 7;
   --neutral-contrast-threshold: 36%;
 }
