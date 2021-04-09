@@ -9,7 +9,7 @@
   /* 
       Change this parameters to update your theme 
     */
-  --primary-h: 202;
+  /* --primary-h: 202;
   --primary-s: 75;
   --primary-l: 28;
   --primary-contrast-threshold: 44%;
@@ -27,5 +27,24 @@
   --neutral-h: 202;
   --neutral-s: 90;
   --neutral-l: 90;
+  --neutral-contrast-threshold: 36%; */
+  --accent-h: 236;
+  --accent-s: 61;
+  --accent-l: 38;
+  --accent-contrast-threshold: 49%;
+
+  --primary-h: 212;
+  --primary-s: 79;
+  --primary-l: 76;
+  --primary-contrast-threshold: 44%;
+
+  --secondary-h: 224;
+  --secondary-s: 61;
+  --secondary-l: 16;
+  --secondary-contrast-threshold: 49%;
+
+  --neutral-h: 0;
+  --neutral-s: 0;
+  --neutral-l: 100;
   --neutral-contrast-threshold: 36%;
 }

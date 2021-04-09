@@ -102,7 +102,7 @@ header a.logo {
   padding: 6px 12px;
 }
 header a.logo svg {
-  fill: var(--primary-A700-contrast);
+  fill: var(--primary-A200-contrast);
   height: 100%;
 }
 header.sticky {
@@ -124,7 +124,7 @@ nav.primary .toggle {
   -webkit-appearance: none;
 }
 nav.primary .toggle svg {
-  fill: var(--primary-A700-contrast)
+  fill: var(--primary-A200-contrast)
 }
 nav.primary .drawer {
   z-index: 10;
@@ -172,7 +172,7 @@ nav.primary ul li a {
     background: transparent;
   }
   header.sticky {
-    background: var(--primary-A700);
+    background: var(--primary-A200);
   }
   header a.logo {
     height: calc(var(--header-height) * 2);
@@ -206,7 +206,7 @@ nav.primary ul li a {
   }
   nav.primary ul li a {
     line-height: var(--header-height);
-    color: var(--primary-A700-contrast);
+    color: var(--primary-A200-contrast);
   }
 }
 </style>

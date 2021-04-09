@@ -64,7 +64,7 @@
 </script>
 <style>
 section.hero {
-  background: linear-gradient(to bottom, var(--primary-A700), var(--primary-A700) var(--header-height), var(--secondary-A700));
+  background: linear-gradient(to bottom, var(--primary-A200), var(--primary-A200) var(--header-height), var(--secondary-A200));
   width: 100vw;
   min-height: 100vh;
   position: relative;
